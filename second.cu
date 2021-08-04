@@ -75,8 +75,8 @@ void MatrixMultiplication(float *P, int Width) {
 
     cudaFree(Pd);
 
-    for(int i = 0; i < Width; i++){
-        for(int j = 0;j < Width; j++){
+    for(int i = 0; i < 10; i++){
+        for(int j = 0;j < 10; j++){
             printf("%f   ", P[i*Width + j]);
         }
     }
